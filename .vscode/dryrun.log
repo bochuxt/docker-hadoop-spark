@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/conquer.io/bigdata/hive-spark'
+docker build -t bde2020/hadoop-base:master ./base
+docker build -t bde2020/hadoop-namenode:master ./namenode
+docker build -t bde2020/hadoop-datanode:master ./datanode
+docker build -t bde2020/hadoop-resourcemanager:master ./resourcemanager
+docker build -t bde2020/hadoop-nodemanager:master ./nodemanager
+docker build -t bde2020/hadoop-historyserver:master ./historyserver
+docker build -t bde2020/hadoop-submit:master ./submit
+docker build -t bde2020/hive:master ./
+make: Leaving directory `/Users/conquer.io/bigdata/hive-spark'
+ 
